@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Media Publisher</title>
+<style>
+  :root { --red:#d62828; --dark:#1f2933; --grey:#616e7c; --bg:#f3f4f6; }
+  body { margin:0; font-family:"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--dark); line-height:1.6; }
+  header { background:var(--dark); color:#fff; padding:28px 16px; border-bottom:4px solid var(--red); }
+  main, header div { max-width:760px; margin:0 auto; }
+  main { padding:24px 16px 48px; }
+  h1 { margin:0; font-size:1.8rem; }
+  h2 { margin-top:2rem; }
+  .muted { color:var(--grey); }
+  a { color:var(--red); }
+  footer { max-width:760px; margin:0 auto; padding:0 16px 32px; color:var(--grey); font-size:.9rem; }
+</style>
+</head>
+<body>
+<header><div>
+  <h1>Social Media Publisher</h1>
+  <p class="muted" style="color:#cbd2d9;margin:.3rem 0 0">Lokale Windows-Anwendung zur geplanten Veröffentlichung eigener Kurzvideos</p>
+</div></header>
+<main>
+  <p>Social Media Publisher ist eine private, lokal installierte Windows-Desktopanwendung. Sie veröffentlicht Videos aus einem
+  Ordner auf dem eigenen PC zu festgelegten Zeiten auf dem <strong>eigenen</strong> YouTube-Kanal des Betreibers.</p>
+
+  <h2>Funktionsweise</h2>
+  <ul>
+    <li>Die Anwendung läuft ausschließlich auf dem PC des Nutzers. Es gibt keinen Server und keine Cloud-Infrastruktur des Anbieters.</li>
+    <li>Die Anmeldung bei YouTube erfolgt über das offizielle Google-OAuth-Verfahren im Browser. Die Anwendung sieht keine Passwörter.</li>
+    <li>Genutzte Berechtigungen: <code>youtube.upload</code> (Videos hochladen) und <code>youtube.readonly</code> (Kanalname und Upload-Status anzeigen).</li>
+    <li>Titel, Beschreibungen und Hashtags werden lokal auf dem PC erzeugt und vor der Veröffentlichung vom Nutzer geprüft.</li>
+  </ul>
+
+  <h2>Rechtliches</h2>
+  <p><a href="privacy.html">Datenschutzerklärung</a> · <a href="terms.html">Nutzungsbedingungen</a></p>
+</main>
+<footer>Diese Anwendung nutzt die YouTube-API-Dienste. Es gelten die
+  <a href="https://www.youtube.com/t/terms">YouTube-Nutzungsbedingungen</a> und die
+  <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a>.</footer>
+</body>
+</html>
